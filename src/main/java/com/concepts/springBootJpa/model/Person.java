@@ -75,4 +75,10 @@ public class Person {
 		this.nationality = nationality;
 	}
 
+	@Override
+	public String toString() {
+		String result = "{ " + this.id + "/n" + this.firstName + "/n" + this.lastName + "/n" + this.dateOfBirth + "/n"
+				+ this.nationality + "/n" + this.occupation + " }";
+		return result;
+	}
 }

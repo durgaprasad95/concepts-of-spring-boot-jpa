@@ -9,6 +9,6 @@ public interface CRUDService {
 
 	void update();
 
-	Person read();
+	Person read(String firstName);
 
 }

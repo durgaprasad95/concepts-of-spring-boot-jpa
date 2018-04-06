@@ -31,8 +31,8 @@ public class CRUDServiceImpl implements CRUDService {
 	}
 
 	@Override
-	public Person read() {
-		return null;
+	public Person read(String firstName) {
+		return personRepository.findByFirstName(firstName);
 	}
 
 }

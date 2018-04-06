@@ -49,4 +49,13 @@ public class HomeController {
 		crudService.create(person);
 		return "New Person's Data is added to the Database";
 	}
+
+	/**
+	 * To test that application make use of JPA and read the Entity from the appropriate table in database.
+	 * formed URL is "localhost:8080/get".
+	 **/
+	@RequestMapping(value = "/get", method = RequestMethod.GET, produces = MediaType.TEXT_PLAIN_VALUE)
+	public String read() throws ParseException {
+		return crudService.read("Durga Prasad").toString();
+	}
 }
